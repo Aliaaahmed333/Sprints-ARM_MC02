@@ -1,53 +1,64 @@
+/********************************************************************************
+* FILE DESCRIBTION
+* -------------------------------------------------------------------------------
+*      File: intCtrl_Cfg.h
+*      Module: -
+*  
+*    Describtion: <write file describtion here>
+*
+********************************************************************************/
 
-
-
-
-
-
-
+#ifnedf INTCTRL_H
+#define INTCTRL_H
+ 
 
 /********************************************************************************
 * INCLUDES
 ********************************************************************************/
+#include "std_Types.h"
+#include "intCtrl_Cfg.h"
 
 /********************************************************************************
-* LOCAL MACORS CONSTANT\FUNCTION
+* GLOBAL CONSTANT MACORS 
 ********************************************************************************/
 
 /********************************************************************************
-* LOCAL DATA
+* GLOBAL CONSTANT FUNCTION
 ********************************************************************************/
+
+
 /********************************************************************************
-* GLOBAL DATA
+* GLOBAL DATA TYPES AND STRUCTURES
 ********************************************************************************/
 
 /********************************************************************************
-* LOCAL FUNCTION PROTOTYPES
-********************************************************************************/
-
-/*******************************************************************************
-* LOCAL FUNCTIONS 
+* GLOBAL DATA PROTYPES
 ********************************************************************************/
 
 /********************************************************************************
-* GLOBAL FUNCTION 
+* GLOBAL FUNCTION PROTYPES
 ********************************************************************************/
 
 /*************************************************************************
-* \Syntax           : std_ReturnType FunctionName(AnyType parameterName)
-* \Description      : Describe this service
+* \Syntax           : void IntCtrl_Init(void)
+* \Description      : initialize NVIC\SCB Module by parsing the configuration
+*                      into NVIC\SCB registers
+*         
 * \Snync\Async      : Synchronous
 * \Reentrancy       : Non Reentrant
-* \Parameters (in)  : parameterName    parameter Describttion
+* \Parameters (in)  : None
 * \Parameters (out) : None
-* \ReturnValue      : std_ReturnType   E_OK
-*                                      E_NOT_OK
+* \ReturnValue      : None
 *************************************************************************/
-std_ReturnType FunctionName(AnyType parameterName)
-{
-	
-}
+void IntCtrl_Init(void);
+#endif  /* INTCTRL_H*/
 
 /********************************************************************************
-*  END OF FILE: FileName.c
+* END OF FILE: int_Ctrl.h
 ********************************************************************************/
+
+ 
+
+
+
+
