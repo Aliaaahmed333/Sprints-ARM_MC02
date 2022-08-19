@@ -14,7 +14,7 @@
 * GLOBAL CONSTANT MACORS 
 ********************************************************************************/
 typedef  unsigned char       uint8;
-typedef    signed char       sint8;
+typedef  signed char       sint8;
 
 typedef  unsigned short int  uint16;
 typedef  signed   short int  sint16;
